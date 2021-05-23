@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>witter Sentiment Analysis</title>
+    
+    </head>
+
+    <body>
+        <h1>Twitter Sentiment Analysis</h1>
+        <h3>To classify whether the tweet is Racist/Sexist or not</h3>
+
+        <form action = "{{url_for('FinalTweet')}}" method = "POST">
+            <input type = "text" name = 'Tweet', placeholder="Enter Tweet" size = 160 required = 'required'/>
+            <button type = "submit" class = "btn btn-primary btn-block btn-large">Submit</button>
+        </form>
+
+        <br>
+        <br>
+        {{final_text}}
+
+    </body>
+
+
+
+
+</html>
